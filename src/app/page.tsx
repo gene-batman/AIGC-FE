@@ -52,7 +52,7 @@ export default function Home() {
         <TextField label='Username' value={username} onChange={(e) => {
           setUsername(e.target.value)
         }} />
-        <TextField label='Password' value={password} onChange={(e) => {
+        <TextField label='Password' type='password' value={password} onChange={(e) => {
           setPassword(e.target.value)
         }} />
         <LoadingButton loading={loading} variant="outlined" onClick={login}>
